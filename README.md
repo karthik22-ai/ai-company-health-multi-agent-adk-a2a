@@ -6,6 +6,15 @@
 
 > This is a simulation and a research project, not a real insurer. The numbers below are outputs of the simulation.
 
+## Videos
+
+| Video | Length | What it shows |
+|---|---|---|
+| [▶ 90-second overview](videos/ai-company-health-90s.mp4) | 1:35 | The idea, a live chat with an agent, the results and the tracing |
+| [▶ Full walkthrough](videos/ai-company-health-walkthrough.mp4) | 4:04 | The town, the office, a live meeting, dashboards, documents, traces and evaluations |
+
+Both are screen recordings of the running app with narration and captions, so they also work with the sound off. Click a title to open the video.
+
 ## What I'm seeing (35 simulated days)
 
 | Result | Value |
@@ -134,6 +143,7 @@ cd backend && uv run pytest
 ## Project layout
 
 ```
+videos/             the 90-second overview and the full walkthrough
 backend/            Python backend: agents, A2A, workflows, company, town, quality, API (details in backend/README.md)
 frontend/           the 3D UI (Three.js), served by the backend
 docs/HQ-API.md      the UI ↔ backend event protocol
