@@ -6,15 +6,6 @@
 
 > This is a simulation and a research project, not a real insurer. The numbers below are outputs of the simulation.
 
-## Videos
-
-| 90-second overview | Full walkthrough (4 min) |
-|---|---|
-| [![90-second overview](docs/video/linkedin/linkedin-cover.png)](docs/video/linkedin/ai-company-health-90s.mp4) | [![Full walkthrough](docs/video/linkedin/linkedin-cover.png)](docs/video/linkedin/ai-company-health-walkthrough.mp4) |
-| [`ai-company-health-90s.mp4`](docs/video/linkedin/ai-company-health-90s.mp4): the idea, a live chat with an agent, results and tracing | [`ai-company-health-walkthrough.mp4`](docs/video/linkedin/ai-company-health-walkthrough.mp4): the town, the office, a live meeting, dashboards, documents, traces and evaluations |
-
-Both videos are screen recordings of the running app with narration and burned-in captions, so they also work with the sound off. Click a thumbnail to open the video.
-
 ## What I'm seeing (35 simulated days)
 
 | Result | Value |
@@ -117,12 +108,6 @@ This is the engineering that makes the agents trustworthy (`backend/src/hq/quali
 ### Offline mock LLM and tests
 **Here:** without a cloud project the backend runs on a deterministic mock LLM (`backend/src/hq/llm/mock*.py`), so everything works offline and in CI. `pytest` covers the simulation, SQL safety, every workflow end to end, A2A, REST, WebSocket and the IT app backlog (73 tests).
 
-### Video pipeline
-The videos were made from the running app, entirely in code (`docs/video/linkedin/`):
-- **Recording:** Playwright drives headless Chrome through the app and records the screen (`record.py`).
-- **Narration:** written in `narration.json` and voiced with Google Cloud Text-to-Speech (`tts.py`).
-- **Assembly:** ffmpeg adds the voice, burns in captions and speeds up the waits while the agents work (`build.py`). `cut90.py` cuts the 90-second version.
-
 ## Run it
 
 ```bash
@@ -152,7 +137,6 @@ cd backend && uv run pytest
 backend/            Python backend: agents, A2A, workflows, company, town, quality, API (details in backend/README.md)
 frontend/           the 3D UI (Three.js), served by the backend
 docs/HQ-API.md      the UI ↔ backend event protocol
-docs/video/         scripts that record, narrate and edit the videos
 ```
 
 For the full design (agent factory, workflows, teams, the town, quality and the REST API), see [`backend/README.md`](backend/README.md).

@@ -21,11 +21,5 @@ backend/data/
 # macOS
 .DS_Store
 
-# video: keep scripts and the final LinkedIn videos, skip raw recordings and intermediates
-docs/video/**/raw.webm
-docs/video/**/audio/
-docs/video/**/rec/
-docs/video/samples/
-docs/video/*.mp4
-docs/video/v2/*.mp4
-docs/video/linkedin/linkedin-post.md
+# videos and video scripts stay local
+docs/video/
