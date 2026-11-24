@@ -1,0 +1,110 @@
+{
+ "video_offset": -0.8,
+ "lines": [
+  {
+   "key": "cold1",
+   "start": 3.11,
+   "dur": 2.89
+  },
+  {
+   "key": "cold2",
+   "start": 7.21,
+   "dur": 5.01
+  },
+  {
+   "key": "intro",
+   "start": 14.24,
+   "dur": 11.81
+  },
+  {
+   "key": "town",
+   "start": 36.2,
+   "dur": 16.49
+  },
+  {
+   "key": "resident",
+   "start": 55.32,
+   "dur": 17.09
+  },
+  {
+   "key": "resident2",
+   "start": 72.61,
+   "dur": 23.53
+  },
+  {
+   "key": "office",
+   "start": 101.25,
+   "dur": 10.89
+  },
+  {
+   "key": "tokens",
+   "start": 113.45,
+   "dur": 15.25
+  },
+  {
+   "key": "chat_ask",
+   "start": 129.9,
+   "dur": 2.53
+  },
+  {
+   "key": "chat_reply",
+   "start": 192.27,
+   "dur": 9.53
+  },
+  {
+   "key": "meet_call",
+   "start": 207.55,
+   "dur": 8.97
+  },
+  {
+   "key": "meet_walk",
+   "start": 232.44,
+   "dur": 9.81
+  },
+  {
+   "key": "meet_present",
+   "start": 491.96,
+   "dur": 9.05
+  },
+  {
+   "key": "sold",
+   "start": 509.63,
+   "dur": 12.21
+  },
+  {
+   "key": "docs",
+   "start": 523.62,
+   "dur": 15.89
+  },
+  {
+   "key": "timeline",
+   "start": 543.36,
+   "dur": 13.33
+  },
+  {
+   "key": "ops",
+   "start": 562.69,
+   "dur": 10.09
+  },
+  {
+   "key": "traces",
+   "start": 575.94,
+   "dur": 7.69
+  },
+  {
+   "key": "goals",
+   "start": 585.61,
+   "dur": 15.13
+  },
+  {
+   "key": "outro",
+   "start": 602.28,
+   "dur": 14.57
+  },
+  {
+   "key": "final",
+   "start": 617.97,
+   "dur": 5.37
+  }
+ ]
+}

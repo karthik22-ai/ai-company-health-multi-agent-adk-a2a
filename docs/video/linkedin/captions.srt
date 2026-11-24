@@ -1,0 +1,267 @@
+1
+00:00:03,000 --> 00:00:03,190
+Hi!
+
+2
+00:00:03,240 --> 00:00:05,271
+I built AI Company Health.
+
+3
+00:00:05,321 --> 00:00:07,432
+It's an agentic AI project:
+
+4
+00:00:07,482 --> 00:00:13,035
+a simulated health insurer where every single employee is an AI agent.
+
+5
+00:00:13,085 --> 00:00:16,317
+Fifty of them, across twelve departments,
+
+6
+00:00:16,367 --> 00:00:21,120
+competing for customers in a town of a hundred AI residents.
+
+7
+00:00:23,060 --> 00:00:25,019
+This is the town, Wattle Grove.
+
+8
+00:00:25,069 --> 00:00:26,640
+Every resident has a job,
+
+9
+00:00:26,690 --> 00:00:27,937
+an income, a family,
+
+10
+00:00:27,987 --> 00:00:29,299
+and their own memory.
+
+11
+00:00:29,349 --> 00:00:31,373
+Health cover is compulsory here,
+
+12
+00:00:31,423 --> 00:00:33,254
+so each of them picks a fund,
+
+13
+00:00:33,304 --> 00:00:34,939
+one of nine rivals, or us.
+
+14
+00:00:37,360 --> 00:00:40,210
+Click on anyone, and you see their whole life.
+
+15
+00:00:40,260 --> 00:00:43,300
+Where they work, which fund they're with and why,
+
+16
+00:00:43,350 --> 00:00:45,507
+every claim and every conversation.
+
+17
+00:00:45,557 --> 00:00:48,596
+And nothing in the company's numbers is scripted.
+
+18
+00:00:48,646 --> 00:00:51,749
+Every sale and every claim comes from a decision a
+
+19
+00:00:51,799 --> 00:00:53,200
+resident actually made.
+
+20
+00:00:54,660 --> 00:00:56,150
+This is head office.
+
+21
+00:00:56,200 --> 00:00:57,844
+Each agent has a role,
+
+22
+00:00:57,894 --> 00:01:03,312
+its own tools that query the company's live data, and long-term memory.
+
+23
+00:01:03,362 --> 00:01:05,700
+This is Leo, our head of sales.
+
+24
+00:01:06,759 --> 00:01:09,487
+I track token usage for every agent,
+
+25
+00:01:09,537 --> 00:01:12,728
+day by day, so I can see exactly what each
+
+26
+00:01:12,778 --> 00:01:14,039
+one costs to run.
+
+27
+00:01:14,989 --> 00:01:16,989
+And I can just talk to him.
+
+28
+00:01:33,917 --> 00:01:38,446
+Before answering, he checked the real numbers with his own tools.
+
+29
+00:01:38,496 --> 00:01:41,757
+And he'll remember this conversation next time.
+
+30
+00:01:43,937 --> 00:01:45,591
+I can also call a meeting.
+
+31
+00:01:45,641 --> 00:01:48,737
+Pick a room, who should be there, and an agenda.
+
+32
+00:02:02,495 --> 00:02:04,349
+They walk up to the boardroom,
+
+33
+00:02:04,399 --> 00:02:07,015
+each one builds a deck from the live data,
+
+34
+00:02:07,065 --> 00:02:08,284
+and they present it,
+
+35
+00:02:08,334 --> 00:02:09,935
+right there on the screen.
+
+36
+00:02:09,985 --> 00:02:12,855
+Then the minutes get written up automatically.
+
+37
+00:02:30,904 --> 00:02:33,022
+So, what has it actually achieved?
+
+38
+00:02:33,072 --> 00:02:35,063
+Over thirty-five simulated days,
+
+39
+00:02:35,113 --> 00:02:39,717
+policies in force went from twenty to forty-six, with zero cancellations.
+
+40
+00:02:39,767 --> 00:02:42,459
+That's made us the number one fund in town,
+
+41
+00:02:42,509 --> 00:02:45,264
+with about forty-five percent of the market.
+
+42
+00:02:48,004 --> 00:02:50,724
+Customer satisfaction is sitting at a hundred,
+
+43
+00:02:50,774 --> 00:02:52,831
+every claim met its service target,
+
+44
+00:02:52,881 --> 00:02:56,564
+and the business is running at around a twenty percent margin.
+
+45
+00:02:58,805 --> 00:03:02,328
+The agents have also produced over thirty documents on their own.
+
+46
+00:03:02,378 --> 00:03:04,912
+Decks, dashboards, reports and meeting minutes.
+
+47
+00:03:04,962 --> 00:03:08,101
+And every number in them is fact-checked against the data,
+
+48
+00:03:08,151 --> 00:03:10,080
+so if an agent gets something wrong,
+
+49
+00:03:10,130 --> 00:03:12,444
+it's flagged, and the agent learns from it.
+
+50
+00:03:14,894 --> 00:03:17,757
+Under the hood, every model call is tracked.
+
+51
+00:03:17,807 --> 00:03:21,266
+So far, that's over five thousand calls and more than
+
+52
+00:03:21,316 --> 00:03:22,656
+fifty million tokens.
+
+53
+00:03:22,706 --> 00:03:24,245
+And every run is traced,
+
+54
+00:03:24,295 --> 00:03:27,357
+so I can see exactly which tools an agent used,
+
+55
+00:03:27,407 --> 00:03:28,615
+and what came back.
+
+56
+00:03:30,425 --> 00:03:33,858
+Every Monday, the CEO agent reviews last week's goals and
+
+57
+00:03:33,908 --> 00:03:34,714
+sets new ones.
+
+58
+00:03:34,764 --> 00:03:38,320
+And an evaluation suite checks that agents answer with real
+
+59
+00:03:38,370 --> 00:03:39,603
+numbers, not guesses.
+
+60
+00:03:39,653 --> 00:03:41,865
+Right now, they pass five out of six.
+
+61
+00:03:43,254 --> 00:03:46,557
+It's built with Google's Agent Development Kit,
+
+62
+00:03:46,607 --> 00:03:49,980
+Vertex AI, A2A for agent-to-agent communication,
+
+63
+00:03:50,030 --> 00:03:51,977
+LangGraph for the workflows,
+
+64
+00:03:52,027 --> 00:03:54,189
+and a 3D front end in Three.js,
+
+65
+00:03:54,239 --> 00:03:56,186
+all running on Google Cloud.
+
+66
+00:03:56,236 --> 00:03:57,612
+Thanks for watching.
+
+67
+00:03:57,662 --> 00:03:59,894
+I'd love to hear what you think!

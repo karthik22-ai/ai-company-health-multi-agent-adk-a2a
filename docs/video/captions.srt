@@ -1,0 +1,219 @@
+1
+00:00:01,200 --> 00:00:02,780
+This is AI Company Health.
+
+2
+00:00:02,830 --> 00:00:05,478
+It's a private health insurer in Australia,
+
+3
+00:00:05,528 --> 00:00:09,869
+and here's the twist: every single person working here is an AI agent.
+
+4
+00:00:09,919 --> 00:00:13,507
+Fifty of them, across twelve departments, in one building.
+
+5
+00:00:13,557 --> 00:00:14,949
+Let me show you around.
+
+6
+00:00:17,019 --> 00:00:18,647
+Out here is Wattle Grove,
+
+7
+00:00:18,697 --> 00:00:21,331
+a town of just over a hundred residents.
+
+8
+00:00:21,381 --> 00:00:24,417
+They're AI agents too, and each one has a job,
+
+9
+00:00:24,467 --> 00:00:27,168
+a home, a family, and their own memories.
+
+10
+00:00:27,218 --> 00:00:29,851
+Health cover is compulsory in this town,
+
+11
+00:00:29,901 --> 00:00:31,529
+so everyone picks a fund:
+
+12
+00:00:31,579 --> 00:00:33,676
+Medibank, Bupa, HCF, nib, or us.
+
+13
+00:00:33,726 --> 00:00:35,622
+And that's the important bit.
+
+14
+00:00:35,672 --> 00:00:38,439
+None of the company's numbers are made up.
+
+15
+00:00:38,489 --> 00:00:44,210
+Every sale, every claim, every dollar comes from what these residents actually decide.
+
+16
+00:00:45,669 --> 00:00:49,035
+Back inside the office, the whole team's listed on the left.
+
+17
+00:00:49,085 --> 00:00:50,458
+Click on anyone, say Leo,
+
+18
+00:00:50,508 --> 00:00:54,272
+our head of sales, and the camera drops you straight into his room.
+
+19
+00:00:54,322 --> 00:00:56,150
+You can see what he's working on,
+
+20
+00:00:56,200 --> 00:00:58,939
+what he remembers, and how many tokens he's used.
+
+21
+00:00:59,289 --> 00:01:00,852
+And you can just talk to him.
+
+22
+00:01:00,902 --> 00:01:02,519
+Let's ask how sales are going.
+
+23
+00:01:06,769 --> 00:01:12,826
+>> Fast-forward (8x): Leo is answering live with Gemini
+
+24
+00:01:18,926 --> 00:01:19,867
+That answer's live.
+
+25
+00:01:19,917 --> 00:01:22,006
+He pulled the numbers with his own tools,
+
+26
+00:01:22,056 --> 00:01:24,876
+and he'll remember this conversation next time we chat.
+
+27
+00:01:25,326 --> 00:01:28,407
+Up the top, this counter shows memberships sold.
+
+28
+00:01:28,457 --> 00:01:30,820
+Click it, and you get the full story:
+
+29
+00:01:30,870 --> 00:01:32,973
+who joined, which fund they left,
+
+30
+00:01:33,023 --> 00:01:36,756
+what they pay, and, in their own words, why they switched.
+
+31
+00:01:38,666 --> 00:01:40,966
+The agents produce real work, too.
+
+32
+00:01:41,016 --> 00:01:44,423
+Presentations from their meetings, weekly reports,
+
+33
+00:01:44,473 --> 00:01:46,359
+dashboards, even small apps.
+
+34
+00:01:46,409 --> 00:01:50,646
+Every number in a document gets fact-checked against the data,
+
+35
+00:01:50,696 --> 00:01:54,656
+and you can download any of it as PowerPoint, HTML or CSV.
+
+36
+00:01:58,846 --> 00:02:01,823
+The timeline replays the company day by day.
+
+37
+00:02:01,873 --> 00:02:04,025
+Members, claims, the loss ratio,
+
+38
+00:02:04,075 --> 00:02:06,983
+and everything that happened along the way:
+
+39
+00:02:07,033 --> 00:02:10,285
+campaigns, competitor moves, new babies in town,
+
+40
+00:02:10,335 --> 00:02:12,556
+even complaints to the ombudsman.
+
+41
+00:02:14,936 --> 00:02:16,734
+And this is the engine room.
+
+42
+00:02:16,784 --> 00:02:18,715
+Model calls per minute, quota,
+
+43
+00:02:18,765 --> 00:02:20,167
+and what it's costing.
+
+44
+00:02:20,217 --> 00:02:21,884
+Every agent run is traced,
+
+45
+00:02:21,934 --> 00:02:25,185
+so you can open one up and see exactly which tools
+
+46
+00:02:25,235 --> 00:02:27,166
+it called, and what came back.
+
+47
+00:02:28,956 --> 00:02:32,440
+Every Monday the CEO reviews last week's goals and sets new
+
+48
+00:02:32,490 --> 00:02:35,554
+ones, and the lessons go into the leaders' memories.
+
+49
+00:02:35,604 --> 00:02:40,466
+These evaluations check that the agents answer with the real numbers, not guesses.
+
+50
+00:02:41,956 --> 00:02:45,951
+Under the hood, it's Google's Agent Development Kit with Gemini on
+
+51
+00:02:46,001 --> 00:02:48,955
+Vertex AI, agents talking to each other over A2A,
+
+52
+00:02:49,005 --> 00:02:51,161
+and LangGraph running the workflows,
+
+53
+00:02:51,211 --> 00:02:52,387
+all on Google Cloud.
+
+54
+00:02:52,437 --> 00:02:53,920
+That's AI Company Health.
+
+55
+00:02:53,970 --> 00:02:55,146
+Thanks for watching.

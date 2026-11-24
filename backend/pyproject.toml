@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-company-hq-backend"
+version = "0.1.0"
+description = "Backend for the AI Company finance HQ: Google ADK agents (Gemini), A2A, LangGraph workflows, FastAPI bridge to the 3D UI"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "google-adk",
+  "a2a-sdk[http-server]",
+  "langgraph",
+  "fastapi",
+  "uvicorn[standard]",
+  "httpx",
+  "pydantic>=2",
+  "pydantic-settings",
+  "numpy>=2.4.6",
+  "python-pptx>=1.0.2",
+]
+
+[dependency-groups]
+dev = ["pytest", "pytest-asyncio"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hq"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]

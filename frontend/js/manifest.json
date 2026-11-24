@@ -1,0 +1,16 @@
+{
+  "order": [
+    "data.js",
+    "scene.js",
+    "building.js",
+    "people.js",
+    "views.js",
+    "panels.js",
+    "company.js",
+    "city.js",
+    "town.js",
+    "rooms.js",
+    "main.js"
+  ],
+  "note": "Files are concatenated in this order into one classic script, so they share one global scope."
+}

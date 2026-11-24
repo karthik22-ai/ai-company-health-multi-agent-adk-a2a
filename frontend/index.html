@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Company HQ</title>
+<link rel="stylesheet" href="css/app.css">
+
+</head>
+<body data-labels="role">
+<div id="labels"></div>
+<div class="toasts" id="toasts"></div>
+<div class="ui">
+  <header class="glass">
+    <div class="brand" title="Health insurance &amp; care · Australia · agents stay at their desks until your backend moves them"><div class="logo">AI</div><h1>AI Company</h1></div>
+    <nav class="pnav" id="pnav" aria-label="Panels"></nav>
+    <div class="stats" id="stats"></div>
+    <div class="right-h"><span class="pill" id="conn" title="Backend connection|Live link to the AI backend on your Google Cloud VM"><i></i><span>Backend offline</span></span><span class="pill" id="bizdate" title="Company date|The simulated date and policies in force">📅 –</span><span class="pill" id="soldChip" style="cursor:pointer;display:none" title="🧾 Memberships sold|Residents who bought or switched to AI Company Health. Click for who, which plan and why">🧾 –</span>
+      <div class="clk" id="clk"><button class="btn" data-a="run" title="Run|Run the company: a new simulated day every few seconds">▶</button><button class="btn" data-a="pause" title="Pause|Stop the company clock">⏸</button><button class="btn" data-a="step" title="+1 day|Simulate the next day and let the agents work on it">+1 day</button>
+        <select id="clkSpd" title="Speed|Real seconds per simulated day when running"><option value="20">20 s/day</option><option value="45" selected>45 s/day</option><option value="90">90 s/day</option></select>
+        <label title="Agents on/off|Ticked: the AI agents work on every simulated day (uses Gemini). Unticked: fast-forward the numbers only." style="font-size:11px;color:var(--mute);display:flex;gap:4px;align-items:center"><input type="checkbox" id="clkAg" checked>agents</label></div>
+      <span class="pill" id="fps" title="Frame rate|How smoothly the 3D view is drawing">– fps</span><span class="pill" id="clock" title="Your local time"></span><button class="btn pri" id="bFocus" title="Focus mode (F)|Hide the header and every panel. Move the mouse to the top edge to peek; Esc or F to come back.">⤢ Focus</button></div>
+  </header>
+  <div id="peekZone"></div>
+
+  <div class="col l">
+    <div class="glass panel" style="display:flex;flex-direction:column;min-height:0;flex:1">
+      <div class="tabs" id="ltabs"><button data-t="agents" class="on">Agents</button><button data-t="depts">Departments</button><button data-t="rooms">Rooms</button><button data-t="meet">Meet</button><button data-t="town">Town</button></div>
+      <input type="search" id="q" placeholder="Search name, role or ID…">
+      <div class="list" id="llist"></div>
+      <div id="meetpane">
+        <select id="mRoom"></select>
+        <input type="text" id="mTopic" placeholder="Topic, e.g. Monthly performance review">
+        <textarea id="mAgenda" rows="3" placeholder="Agenda (they prepare real decks on it), e.g. Why are net adds below target and what do we do this month?"></textarea>
+        <div style="display:flex;gap:6px"><select id="mDept"></select><button class="btn sm" id="mClear">Clear</button></div>
+        <input type="search" id="mq" placeholder="Search agents…">
+        <div class="list" id="mList"></div>
+        <label style="font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center"><input type="checkbox" id="mPresent" checked> Ask each person to demo their work</label>
+        <div style="display:flex;gap:6px"><button class="btn pri" id="mGo" style="flex:1">Call meeting</button><button class="btn" id="mEnd">End meeting</button></div>
+        <div class="hint" id="mInfo"></div>
+      </div>
+    </div>
+    <div class="glass mapcard">
+      <div class="tabs" id="ftabs"><b>Floor map</b><button data-f="2">L3</button><button data-f="1">L2</button><button data-f="0">L1</button><button data-f="all">All</button></div>
+      <canvas id="map" width="282" height="180"></canvas>
+    </div>
+  </div>
+
+  <div class="mid" style="position:relative"><div class="floors glass" id="floors"></div>
+    <div class="glass bar">
+      <div class="seg" id="lmode"><button data-m="role" class="on">Roles</button><button data-m="name">Names</button><button data-m="off">Labels off</button></div>
+      <button class="btn on" id="bRot">Auto-rotate</button>
+      <button class="btn" id="bReset">Reset view</button>
+      <button class="btn" id="bClear">Clear focus (Esc)</button>
+      <button class="btn pri" id="bFP" title="Stand inside the selected room (first person)">👁 Room view</button>
+      <button class="btn" id="bBoard">Task board</button>
+      <button class="btn pri" id="bCo">Company</button>
+      <button class="btn" id="bReplay">Replay</button>
+      <div class="seg" id="tod"><button data-t="auto" class="on">Auto</button><button data-t="day">Day</button><button data-t="night">Night</button></div>
+      <div class="seg" id="qual"><button data-q="0">Low</button><button data-q="1">Med</button><button data-q="2" class="on">High</button></div>
+      <button class="btn" id="bSound">🔔 Off</button>
+      <button class="btn" id="bPal">Search ( / )</button>
+    </div>
+    <div class="glass chatd" id="chat"><div class="ch" id="cHead"></div><div class="cmsgs" id="cMsgs"></div>
+      <div class="chips" id="cChips" style="display:none"><button data-c="status">Status update</button><button data-c="block">Any blockers?</button><button data-c="meet">Call to meeting &amp; demo</button><button data-c="desk">Back to your desk</button></div>
+      <div class="crow" style="display:none"><select id="cGoRoom"></select><button class="btn pri" id="cGoBtn">Send there</button><button class="btn" id="cPick" title="Then click a room in the 3D view, the floor map or the Rooms list">Pick room</button></div>
+      <div class="crow"><input type="text" id="cIn" placeholder="Message this agent…"><button class="btn pri" id="cSend">Send</button></div></div>
+    <div class="glass replay" id="replay"><div class="rr"><b style="font-size:12px;color:#60a5fa">● REPLAY</b><button class="btn sm" id="rpPlay">▶</button><input type="range" id="rpSeek" min="0" max="1000" value="0"><span id="rpT" style="font-variant-numeric:tabular-nums;font-size:11px;color:var(--mute)">00:00 / 00:00</span></div>
+      <div class="rr"><div class="seg" id="rpSpd"><button data-s="1" class="on">1×</button><button data-s="2">2×</button><button data-s="4">4×</button></div><button class="btn pri sm" id="rpLive" style="margin-left:auto">Back to live</button></div></div>
+  </div>
+
+  <div class="col r">
+    <div class="rscroll">
+      <div class="glass panel detail" id="detail"></div>
+      <div class="glass panel">
+        <h3>Test controls <span style="text-transform:none;letter-spacing:0">for dev without a backend</span></h3>
+        <div class="ctl">
+          <select id="cAgent" class="full"></select>
+          <div class="r2 full"><select id="cRoom"></select><button class="btn pri" id="cMove">Move</button><button class="btn" id="cDesk">Desk</button></div>
+          <div class="r2 full"><select id="cState"><option>idle</option><option>working</option><option>meeting</option><option>blocked</option><option>done</option><option>error</option></select><input type="text" id="cText" placeholder="Status text"><button class="btn" id="cSet">Set</button></div>
+          <div class="r2 full"><input type="text" id="cSay" placeholder="Say something…"><button class="btn" id="cSayB">Say</button></div>
+          <div class="r2 full"><select id="cTo"></select><button class="btn" id="cHand">Hand off</button></div>
+          <label class="full" style="font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center"><input type="checkbox" id="cHuddle"> Auto-huddle when an agent is blocked or in error (off by default)</label>
+          <button class="btn full" id="cDemo">▶ Run demo (a trading day)</button>
+          <button class="btn full" id="cReset">Send everyone back to desks</button>
+        </div>
+      </div>
+      <div class="glass panel"><h3>Systems</h3><div class="sys" id="sys"></div></div>
+      <div class="glass panel"><h3>Activity</h3><div class="feed" id="feed"></div></div>
+      <div class="glass panel"><details><summary>Backend API ▾</summary><pre id="apidoc"></pre>
+        <div class="ctl" style="margin-top:8px"><input type="text" id="wsurl" class="full" placeholder="ws://localhost:8080  (or http SSE URL)"><button class="btn pri full" id="wsgo">Connect</button></div></details></div>
+    </div>
+  </div>
+</div>
+<div class="glass fphud" id="fpHud"><b id="fpName"></b><span>Drag look · WASD walk · wheel zoom · click a person or screen</span><span class="sc"><button class="btn sm" id="fpPrev" title="Previous screen ( [ )">◀</button><b id="fpScr" style="min-width:130px;text-align:center"></b><button class="btn sm" id="fpNext" title="Next screen ( ] )">▶</button><button class="btn sm" id="fpBack">Back</button></span><button class="btn sm" id="fpScreens" title="Jump to a screen in this room ( ] )">🖥 Screens</button><button class="btn sm" id="fpReset">Reset</button><button class="btn sm pri" id="fpExit">Exit (Esc)</button></div><div id="fpDot"></div>
+<div id="bview"></div><div class="libM" id="docsM"><div class="glass"><div class="libH"><b>📁 Documents</b><input type="search" id="docQ" placeholder="Search title, author, team…"><button class="btn sm" id="docsX">✕ Close</button></div>
+  <div class="libF" id="docK"></div><div class="libF"><select id="docD"></select><span class="hint" id="docN"></span></div><div id="docL"></div>
+  <div class="libAsk"><b>Ask a team for a document</b><div class="crow"><select id="askD"></select><input type="text" id="askT" placeholder="e.g. a presentation on why members leave, with charts"><button class="btn pri" id="askGo">Request</button></div></div></div></div>
+<div class="libM" id="profM"><div class="glass"><div class="libH"><b>🏢 AI Company Health</b><span></span><button class="btn sm" id="profX">✕ Close</button></div><div id="profB"><div class="hint">Loading…</div></div></div></div>
+<div class="libM" id="opsM"><div class="glass"><div class="libH"><b>📈 AI operations</b><span class="hint" id="opsSub"></span><button class="btn sm" id="opsR">↻</button><button class="btn sm" id="opsX">✕ Close</button></div>
+  <div class="libF" id="opsTabs"><button data-t="live" class="on">Live</button><button data-t="traces">Traces</button><button data-t="evals">Evaluations</button><button data-t="goals">Goals</button></div><div id="opsB"><div class="hint">Loading…</div></div></div></div>
+<div class="libM" id="tlM"><div class="glass"><div class="libH"><b>🕒 Timeline</b><span class="hint" id="tlSub"></span><button class="btn sm" id="tlX">✕ Close</button></div>
+  <div class="tlbar"><button class="btn pri" id="tlPlay">▶ Play</button><input type="range" id="tlR" min="0" max="0" value="0"><select id="tlDays"><option value="7">7 days</option><option value="28" selected>28 days</option><option value="90">90 days</option></select></div>
+  <svg id="tlSpark" viewBox="0 0 600 70" preserveAspectRatio="none"></svg><div id="tlB"></div></div></div>
+<div id="tourO"><div id="tourHole"></div><div id="tourCard" class="glass"><small id="tourN"></small><b id="tourT"></b><p id="tourP"></p><div class="crow"><button class="btn sm" id="tourSkip">Skip</button><button class="btn sm" id="tourBack">Back</button><button class="btn pri sm" id="tourNext">Next</button></div></div></div>
+<div id="appsM"><div class="glass"><div style="display:flex;align-items:center;margin-bottom:10px"><b style="flex:1;font-size:15px">🧩 Apps built by IT &amp; Apps</b><button class="btn sm" id="appsX">✕ Close</button></div><div id="appsL"></div></div></div><div class="fv" id="fv"><div class="glass fvbox"><div class="fvh"><div><b id="fvT"></b><small id="fvM"></small></div><div class="fvd" id="fvD"></div><button class="btn sm" id="fvX">✕ Close (Esc)</button></div><iframe id="fvF" sandbox="allow-scripts" title="Work file"></iframe></div></div><div class="glass" id="scrBar"><button class="btn sm" id="sbPrev">◀</button><b id="sbName" style="font-size:12px;min-width:120px;text-align:center"></b><button class="btn sm" id="sbNext">▶</button><button class="btn sm pri" id="sbClose">✕ Close (Esc)</button></div>
+<button class="btn glass" id="focusExit" title="Show the header and panels again (Esc)">⤡ Exit focus</button>
+<div class="glass co" id="co"><div class="ch2"><b>Company dashboard</b><div class="tabs2" id="coTabs"><button data-t="over" class="on">Overview</button><button data-t="plans">Plans</button><button data-t="dec">Decisions</button><button data-t="team">Team</button><button data-t="log">Strategy log</button><button data-t="files">Work files</button><button data-t="access">Data access</button><button data-t="town">Town</button></div><span class="hint" id="coDate" style="margin-left:auto"></span><button class="btn sm" id="coClose">Close</button></div><div class="body" id="coBody"></div></div>
+<div class="glass" id="board"><div class="bh"><b>Task board</b><select id="bDept"></select><button class="btn sm" id="bClose">Close</button></div><div class="bcols" id="bCols"></div></div>
+<div class="pal" id="pal"><div class="glass"><input type="text" id="palIn" placeholder="Search agents, departments, rooms or actions…"><div class="pres" id="palList"></div></div></div>
+<div id="err"><div><h2>3D view needs WebGL and internet</h2><p style="color:var(--mute);margin-top:8px">The Three.js library couldn't load. Check your connection and reload.</p></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

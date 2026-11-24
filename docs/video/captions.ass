@@ -1,0 +1,67 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1600
+PlayResY: 900
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Helvetica Neue,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99101522,0,0,0,0,100,100,0,0,3,14,0,2,160,160,46,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.20,0:00:02.78,Cap,,0,0,0,,This is AI Company Health.
+Dialogue: 0,0:00:02.83,0:00:05.48,Cap,,0,0,0,,It's a private health insurer in Australia,
+Dialogue: 0,0:00:05.53,0:00:09.87,Cap,,0,0,0,,and here's the twist: every single person working here is an AI agent.
+Dialogue: 0,0:00:09.92,0:00:13.51,Cap,,0,0,0,,Fifty of them, across twelve departments, in one building.
+Dialogue: 0,0:00:13.56,0:00:14.95,Cap,,0,0,0,,Let me show you around.
+Dialogue: 0,0:00:17.02,0:00:18.65,Cap,,0,0,0,,Out here is Wattle Grove,
+Dialogue: 0,0:00:18.70,0:00:21.33,Cap,,0,0,0,,a town of just over a hundred residents.
+Dialogue: 0,0:00:21.38,0:00:24.42,Cap,,0,0,0,,They're AI agents too, and each one has a job,
+Dialogue: 0,0:00:24.47,0:00:27.17,Cap,,0,0,0,,a home, a family, and their own memories.
+Dialogue: 0,0:00:27.22,0:00:29.85,Cap,,0,0,0,,Health cover is compulsory in this town,
+Dialogue: 0,0:00:29.90,0:00:31.53,Cap,,0,0,0,,so everyone picks a fund:
+Dialogue: 0,0:00:31.58,0:00:33.68,Cap,,0,0,0,,Medibank, Bupa, HCF, nib, or us.
+Dialogue: 0,0:00:33.73,0:00:35.62,Cap,,0,0,0,,And that's the important bit.
+Dialogue: 0,0:00:35.67,0:00:38.44,Cap,,0,0,0,,None of the company's numbers are made up.
+Dialogue: 0,0:00:38.49,0:00:44.21,Cap,,0,0,0,,Every sale, every claim, every dollar comes from what these residents actually decide.
+Dialogue: 0,0:00:45.67,0:00:49.04,Cap,,0,0,0,,Back inside the office, the whole team's listed on the left.
+Dialogue: 0,0:00:49.09,0:00:50.46,Cap,,0,0,0,,Click on anyone, say Leo,
+Dialogue: 0,0:00:50.51,0:00:54.27,Cap,,0,0,0,,our head of sales, and the camera drops you straight into his room.
+Dialogue: 0,0:00:54.32,0:00:56.15,Cap,,0,0,0,,You can see what he's working on,
+Dialogue: 0,0:00:56.20,0:00:58.94,Cap,,0,0,0,,what he remembers, and how many tokens he's used.
+Dialogue: 0,0:00:59.29,0:01:00.85,Cap,,0,0,0,,And you can just talk to him.
+Dialogue: 0,0:01:00.90,0:01:02.52,Cap,,0,0,0,,Let's ask how sales are going.
+Dialogue: 0,0:01:06.77,0:01:12.83,Cap,,0,0,0,,>> Fast-forward (8x): Leo is answering live with Gemini
+Dialogue: 0,0:01:18.93,0:01:19.87,Cap,,0,0,0,,That answer's live.
+Dialogue: 0,0:01:19.92,0:01:22.01,Cap,,0,0,0,,He pulled the numbers with his own tools,
+Dialogue: 0,0:01:22.06,0:01:24.88,Cap,,0,0,0,,and he'll remember this conversation next time we chat.
+Dialogue: 0,0:01:25.33,0:01:28.41,Cap,,0,0,0,,Up the top, this counter shows memberships sold.
+Dialogue: 0,0:01:28.46,0:01:30.82,Cap,,0,0,0,,Click it, and you get the full story:
+Dialogue: 0,0:01:30.87,0:01:32.97,Cap,,0,0,0,,who joined, which fund they left,
+Dialogue: 0,0:01:33.02,0:01:36.76,Cap,,0,0,0,,what they pay, and, in their own words, why they switched.
+Dialogue: 0,0:01:38.67,0:01:40.97,Cap,,0,0,0,,The agents produce real work, too.
+Dialogue: 0,0:01:41.02,0:01:44.42,Cap,,0,0,0,,Presentations from their meetings, weekly reports,
+Dialogue: 0,0:01:44.47,0:01:46.36,Cap,,0,0,0,,dashboards, even small apps.
+Dialogue: 0,0:01:46.41,0:01:50.65,Cap,,0,0,0,,Every number in a document gets fact-checked against the data,
+Dialogue: 0,0:01:50.70,0:01:54.66,Cap,,0,0,0,,and you can download any of it as PowerPoint, HTML or CSV.
+Dialogue: 0,0:01:58.85,0:02:01.82,Cap,,0,0,0,,The timeline replays the company day by day.
+Dialogue: 0,0:02:01.87,0:02:04.03,Cap,,0,0,0,,Members, claims, the loss ratio,
+Dialogue: 0,0:02:04.08,0:02:06.98,Cap,,0,0,0,,and everything that happened along the way:
+Dialogue: 0,0:02:07.03,0:02:10.29,Cap,,0,0,0,,campaigns, competitor moves, new babies in town,
+Dialogue: 0,0:02:10.34,0:02:12.56,Cap,,0,0,0,,even complaints to the ombudsman.
+Dialogue: 0,0:02:14.94,0:02:16.73,Cap,,0,0,0,,And this is the engine room.
+Dialogue: 0,0:02:16.78,0:02:18.72,Cap,,0,0,0,,Model calls per minute, quota,
+Dialogue: 0,0:02:18.77,0:02:20.17,Cap,,0,0,0,,and what it's costing.
+Dialogue: 0,0:02:20.22,0:02:21.88,Cap,,0,0,0,,Every agent run is traced,
+Dialogue: 0,0:02:21.93,0:02:25.19,Cap,,0,0,0,,so you can open one up and see exactly which tools
+Dialogue: 0,0:02:25.24,0:02:27.17,Cap,,0,0,0,,it called, and what came back.
+Dialogue: 0,0:02:28.96,0:02:32.44,Cap,,0,0,0,,Every Monday the CEO reviews last week's goals and sets new
+Dialogue: 0,0:02:32.49,0:02:35.55,Cap,,0,0,0,,ones, and the lessons go into the leaders' memories.
+Dialogue: 0,0:02:35.60,0:02:40.47,Cap,,0,0,0,,These evaluations check that the agents answer with the real numbers, not guesses.
+Dialogue: 0,0:02:41.96,0:02:45.95,Cap,,0,0,0,,Under the hood, it's Google's Agent Development Kit with Gemini on
+Dialogue: 0,0:02:46.00,0:02:48.96,Cap,,0,0,0,,Vertex AI, agents talking to each other over A2A,
+Dialogue: 0,0:02:49.01,0:02:51.16,Cap,,0,0,0,,and LangGraph running the workflows,
+Dialogue: 0,0:02:51.21,0:02:52.39,Cap,,0,0,0,,all on Google Cloud.
+Dialogue: 0,0:02:52.44,0:02:53.92,Cap,,0,0,0,,That's AI Company Health.
+Dialogue: 0,0:02:53.97,0:02:55.15,Cap,,0,0,0,,Thanks for watching.

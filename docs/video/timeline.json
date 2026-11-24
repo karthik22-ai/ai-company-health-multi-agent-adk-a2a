@@ -1,0 +1,60 @@
+{
+ "video_offset": -0.65,
+ "lines": [
+  {
+   "key": "intro",
+   "start": 4.32,
+   "dur": 13.8
+  },
+  {
+   "key": "town",
+   "start": 20.14,
+   "dur": 27.24
+  },
+  {
+   "key": "office",
+   "start": 48.79,
+   "dur": 13.32
+  },
+  {
+   "key": "chat_ask",
+   "start": 62.41,
+   "dur": 3.28
+  },
+  {
+   "key": "chat_reply",
+   "start": 126.54,
+   "dur": 6.0
+  },
+  {
+   "key": "sold",
+   "start": 132.94,
+   "dur": 11.48
+  },
+  {
+   "key": "docs",
+   "start": 146.28,
+   "dur": 16.04
+  },
+  {
+   "key": "timeline",
+   "start": 166.46,
+   "dur": 13.76
+  },
+  {
+   "key": "ops",
+   "start": 182.55,
+   "dur": 12.28
+  },
+  {
+   "key": "goals",
+   "start": 196.57,
+   "dur": 11.56
+  },
+  {
+   "key": "outro",
+   "start": 209.57,
+   "dur": 13.24
+  }
+ ]
+}

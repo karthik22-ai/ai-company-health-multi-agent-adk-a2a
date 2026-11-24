@@ -1,0 +1,80 @@
+{
+ "video_offset": -0.67,
+ "lines": [
+  {
+   "key": "intro",
+   "start": 5.31,
+   "dur": 18.17
+  },
+  {
+   "key": "town",
+   "start": 25.37,
+   "dur": 11.93
+  },
+  {
+   "key": "resident",
+   "start": 39.67,
+   "dur": 15.89
+  },
+  {
+   "key": "office",
+   "start": 56.97,
+   "dur": 11.09
+  },
+  {
+   "key": "tokens",
+   "start": 69.07,
+   "dur": 7.33
+  },
+  {
+   "key": "chat_ask",
+   "start": 77.3,
+   "dur": 2.05
+  },
+  {
+   "key": "chat_reply",
+   "start": 113.86,
+   "dur": 7.89
+  },
+  {
+   "key": "meet_call",
+   "start": 123.88,
+   "dur": 4.85
+  },
+  {
+   "key": "meet_walk",
+   "start": 150.56,
+   "dur": 10.41
+  },
+  {
+   "key": "results",
+   "start": 407.09,
+   "dur": 14.41
+  },
+  {
+   "key": "kpis",
+   "start": 424.19,
+   "dur": 8.61
+  },
+  {
+   "key": "docs",
+   "start": 434.99,
+   "dur": 13.69
+  },
+  {
+   "key": "ops",
+   "start": 451.08,
+   "dur": 13.77
+  },
+  {
+   "key": "goals",
+   "start": 466.61,
+   "dur": 11.49
+  },
+  {
+   "key": "outro",
+   "start": 479.44,
+   "dur": 16.69
+  }
+ ]
+}

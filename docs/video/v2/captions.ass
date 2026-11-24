@@ -1,0 +1,93 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1600
+PlayResY: 900
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Helvetica Neue,36,&H00FFFFFF,&H00FFFFFF,&H00000000,&H9A0A0F1C,0,0,0,0,100,100,0.5,0,3,13,0,2,180,180,44,1
+Style: Foot,Helvetica Neue,17,&H00AB9186,&H00AB9186,&H000B0805,&H000B0805,0,0,0,0,100,100,4.6,0,3,16,0,2,180,180,64,1
+Style: Ff,Helvetica Neue,24,&H0042B9F5,&H0042B9F5,&H00000000,&H9A0A0F1C,1,0,0,0,100,100,1,0,3,10,0,8,180,180,90,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:14.13,0:00:16.06,Cap,,0,0,0,,{\fad(250,250)}Meet AI Company Health.
+Dialogue: 0,0:00:16.11,0:00:19.34,Cap,,0,0,0,,{\fad(250,250)}A private health insurer in Australia,
+Dialogue: 0,0:00:19.39,0:00:23.39,Cap,,0,0,0,,{\fad(250,250)}with fifty employees across twelve departments.
+Dialogue: 0,0:00:23.44,0:00:25.89,Cap,,0,0,0,,{\fad(250,250)}And not one of them is human.
+Dialogue: 0,0:00:36.09,0:00:39.25,Cap,,0,0,0,,{\fad(250,250)}Their customers aren't human either.
+Dialogue: 0,0:00:39.30,0:00:41.12,Cap,,0,0,0,,{\fad(250,250)}This is Wattle Grove,
+Dialogue: 0,0:00:41.17,0:00:44.78,Cap,,0,0,0,,{\fad(250,250)}home to just over a hundred AI residents.
+Dialogue: 0,0:00:44.83,0:00:46.47,Cap,,0,0,0,,{\fad(250,250)}Each one has a job,
+Dialogue: 0,0:00:46.52,0:00:48.16,Cap,,0,0,0,,{\fad(250,250)}an income, a house,
+Dialogue: 0,0:00:48.21,0:00:52.53,Cap,,0,0,0,,{\fad(250,250)}a family, and a memory that's entirely their own.
+Dialogue: 0,0:00:55.21,0:00:59.26,Cap,,0,0,0,,{\fad(250,250)}Click on anyone, and their whole life opens up.
+Dialogue: 0,0:00:59.31,0:01:02.05,Cap,,0,0,0,,{\fad(250,250)}Where they work, what they earn,
+Dialogue: 0,0:01:02.10,0:01:03.70,Cap,,0,0,0,,{\fad(250,250)}who they live with,
+Dialogue: 0,0:01:03.75,0:01:07.19,Cap,,0,0,0,,{\fad(250,250)}which health fund they're with, and why.
+Dialogue: 0,0:01:07.24,0:01:09.98,Cap,,0,0,0,,{\fad(250,250)}Every claim, every conversation,
+Dialogue: 0,0:01:10.03,0:01:12.25,Cap,,0,0,0,,{\fad(250,250)}every memory they've kept.
+Dialogue: 0,0:01:12.50,0:01:15.41,Cap,,0,0,0,,{\fad(250,250)}Health cover is compulsory here,
+Dialogue: 0,0:01:15.46,0:01:18.29,Cap,,0,0,0,,{\fad(250,250)}so every resident picks a fund.
+Dialogue: 0,0:01:18.34,0:01:21.53,Cap,,0,0,0,,{\fad(250,250)}There are nine rival funds, and us.
+Dialogue: 0,0:01:21.58,0:01:23.47,Cap,,0,0,0,,{\fad(250,250)}And here's the thing.
+Dialogue: 0,0:01:23.52,0:01:27.09,Cap,,0,0,0,,{\fad(250,250)}The company's numbers aren't simulated.
+Dialogue: 0,0:01:27.14,0:01:29.31,Cap,,0,0,0,,{\fad(250,250)}Every sale, every claim,
+Dialogue: 0,0:01:29.36,0:01:35.98,Cap,,0,0,0,,{\fad(250,250)}every dollar comes from a decision one of these residents actually made.
+Dialogue: 0,0:01:41.14,0:01:45.37,Cap,,0,0,0,,{\fad(250,250)}Back at headquarters, the team works across three floors.
+Dialogue: 0,0:01:45.42,0:01:47.77,Cap,,0,0,0,,{\fad(250,250)}Click on Leo, our head of sales,
+Dialogue: 0,0:01:47.82,0:01:51.98,Cap,,0,0,0,,{\fad(250,250)}and you're standing in his department, right beside him.
+Dialogue: 0,0:01:53.34,0:01:57.88,Cap,,0,0,0,,{\fad(250,250)}Every agent keeps a running tally of what it costs
+Dialogue: 0,0:01:57.93,0:01:59.17,Cap,,0,0,0,,{\fad(250,250)}them to think.
+Dialogue: 0,0:01:59.22,0:02:01.19,Cap,,0,0,0,,{\fad(250,250)}Tokens in, tokens out,
+Dialogue: 0,0:02:01.24,0:02:04.50,Cap,,0,0,0,,{\fad(250,250)}every single model call, day by day.
+Dialogue: 0,0:02:04.55,0:02:08.54,Cap,,0,0,0,,{\fad(250,250)}You always know exactly who's spending what.
+Dialogue: 0,0:02:09.79,0:02:12.27,Cap,,0,0,0,,{\fad(250,250)}And you can simply talk to him.
+Dialogue: 0,0:02:16.62,0:02:23.12,Ff,,0,0,0,,{\fad(250,250)}>> Fast-forward (7x): the agents are working live
+Dialogue: 0,0:02:30.32,0:02:31.73,Cap,,0,0,0,,{\fad(250,250)}That's a live answer,
+Dialogue: 0,0:02:31.78,0:02:33.26,Cap,,0,0,0,,{\fad(250,250)}generated on the spot.
+Dialogue: 0,0:02:33.31,0:02:36.60,Cap,,0,0,0,,{\fad(250,250)}Leo checked the real numbers with his own tools,
+Dialogue: 0,0:02:36.65,0:02:39.80,Cap,,0,0,0,,{\fad(250,250)}and he'll remember this conversation tomorrow.
+Dialogue: 0,0:02:45.60,0:02:47.50,Cap,,0,0,0,,{\fad(250,250)}Need your team in a room?
+Dialogue: 0,0:02:47.55,0:02:49.45,Cap,,0,0,0,,{\fad(250,250)}Open Meet, choose a room,
+Dialogue: 0,0:02:49.50,0:02:50.85,Cap,,0,0,0,,{\fad(250,250)}pick who you want,
+Dialogue: 0,0:02:50.90,0:02:52.73,Cap,,0,0,0,,{\fad(250,250)}and give them an agenda.
+Dialogue: 0,0:02:52.78,0:02:54.52,Cap,,0,0,0,,{\fad(250,250)}Then, call the meeting.
+Dialogue: 0,0:03:10.49,0:03:11.62,Cap,,0,0,0,,{\fad(250,250)}And they come.
+Dialogue: 0,0:03:11.67,0:03:13.74,Cap,,0,0,0,,{\fad(250,250)}Out of their departments,
+Dialogue: 0,0:03:13.79,0:03:17.12,Cap,,0,0,0,,{\fad(250,250)}into the lifts, and up to the boardroom.
+Dialogue: 0,0:03:17.17,0:03:20.25,Cap,,0,0,0,,{\fad(250,250)}Nobody moves unless they're asked to.
+Dialogue: 0,0:03:24.60,0:03:31.10,Ff,,0,0,0,,{\fad(250,250)}>> Fast-forward (34x): the agents are working live
+Dialogue: 0,0:03:38.30,0:03:41.36,Cap,,0,0,0,,{\fad(250,250)}Each of them builds a deck from the live data,
+Dialogue: 0,0:03:41.41,0:03:44.94,Cap,,0,0,0,,{\fad(250,250)}and presents it, right there on the boardroom screen.
+Dialogue: 0,0:03:44.99,0:03:47.30,Cap,,0,0,0,,{\fad(250,250)}Then someone writes up the minutes.
+Dialogue: 0,0:03:55.97,0:04:00.20,Cap,,0,0,0,,{\fad(250,250)}Up the top, this counter tracks every membership sold.
+Dialogue: 0,0:04:00.25,0:04:03.21,Cap,,0,0,0,,{\fad(250,250)}Click it, and you get the whole story.
+Dialogue: 0,0:04:03.26,0:04:05.83,Cap,,0,0,0,,{\fad(250,250)}Who joined, which fund they left,
+Dialogue: 0,0:04:05.88,0:04:08.13,Cap,,0,0,0,,{\fad(250,250)}and, in their own words, why.
+Dialogue: 0,0:04:09.96,0:04:12.84,Cap,,0,0,0,,{\fad(250,250)}Everything the agents make lands here.
+Dialogue: 0,0:04:12.89,0:04:16.24,Cap,,0,0,0,,{\fad(250,250)}Decks, reports, dashboards, even small apps.
+Dialogue: 0,0:04:16.29,0:04:20.63,Cap,,0,0,0,,{\fad(250,250)}And every single number is fact-checked against the data.
+Dialogue: 0,0:04:20.68,0:04:23.10,Cap,,0,0,0,,{\fad(250,250)}Get one wrong, and it's flagged.
+Dialogue: 0,0:04:23.15,0:04:25.80,Cap,,0,0,0,,{\fad(250,250)}And the agent remembers the lesson.
+Dialogue: 0,0:04:29.70,0:04:35.04,Cap,,0,0,0,,{\fad(250,250)}The timeline lets you replay the company, day by day.
+Dialogue: 0,0:04:35.09,0:04:40.13,Cap,,0,0,0,,{\fad(250,250)}Every sale, every campaign, every competitor move.
+Dialogue: 0,0:04:40.18,0:04:42.98,Cap,,0,0,0,,{\fad(250,250)}Even every new baby in town.
+Dialogue: 0,0:04:49.03,0:04:51.13,Cap,,0,0,0,,{\fad(250,250)}And this, is the engine room.
+Dialogue: 0,0:04:51.18,0:04:52.84,Cap,,0,0,0,,{\fad(250,250)}Model calls per minute,
+Dialogue: 0,0:04:52.89,0:04:55.14,Cap,,0,0,0,,{\fad(250,250)}quota, what the day is costing,
+Dialogue: 0,0:04:55.19,0:04:59.07,Cap,,0,0,0,,{\fad(250,250)}and which agents are burning through the most tokens.
+Dialogue: 0,0:05:02.28,0:05:04.22,Cap,,0,0,0,,{\fad(250,250)}Every decision can be traced.
+Dialogue: 0,0:05:04.27,0:05:07.72,Cap,,0,0,0,,{\fad(250,250)}Open any run, and see exactly which tools the agent
+Dialogue: 0,0:05:07.77,0:05:09.92,Cap,,0,0,0,,{\fad(250,250)}reached for, and what came back.
+Dialogue: 0,0:05:11.95,0:05:16.22,Cap,,0,0,0,,{\fad(250,250)}Every Monday, the CEO reviews last week's goals,
+Dialogue: 0,0:05:16.27,0:05:17.84,Cap,,0,0,0,,{\fad(250,250)}and sets new ones.
+Dialogue: 0,0:05:17.89,0:05:21.72,Cap,,0,0,0,,{\fad(250,250)}And these evaluations keep everyone honest,
+Dialogue: 0,0:05:21.77,0:05:27.03,Cap,,0,0,0,,{\fad(250,250)}checking that agents answer with real numbers, not guesses.
+Dialogue: 0,0:05:28.62,0:05:31.94,Cap,,0,0,0,,{\fad(250,250)}Google's Agent Development Kit.
+Dialogue: 0,0:05:31.99,0:05:33.03,Cap,,0,0,0,,{\fad(250,250)}Vertex AI.
+Dialogue: 0,0:05:33.08,0:05:36.72,Cap,,0,0,0,,{\fad(250,250)}Agents talking to agents over A2A.
+Dialogue: 0,0:05:36.77,0:05:40.20,Cap,,0,0,0,,{\fad(250,250)}LangGraph running the workflows.
+Dialogue: 0,0:05:40.25,0:05:43.14,Cap,,0,0,0,,{\fad(250,250)}All of it, on Google Cloud.
+Dialogue: 0,0:05:43.41,0:05:53.63,Foot,,0,0,0,,{\fad(250,250)}GOOGLE ADK  ·  VERTEX AI  ·  A2A  ·  LANGGRAPH  ·  GOOGLE CLOUD
