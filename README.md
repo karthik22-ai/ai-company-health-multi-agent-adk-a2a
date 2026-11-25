@@ -1,5 +1,19 @@
 # AI Company Health
 
+<p align="center">
+  <a href="videos/ai-company-health-90s.mp4"><img src="videos/cover.png" alt="AI Company Health: a company run entirely by AI agents" width="100%"></a>
+</p>
+
+<p align="center">
+  <img alt="Google ADK" src="https://img.shields.io/badge/Google%20ADK-agents-4285F4">
+  <img alt="Vertex AI" src="https://img.shields.io/badge/Vertex%20AI-models-34A853">
+  <img alt="A2A" src="https://img.shields.io/badge/A2A-protocol-FBBC05">
+  <img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-workflows-1C3C3C">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-WebSockets-009688">
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-3D-000000">
+  <img alt="Google Cloud" src="https://img.shields.io/badge/Google%20Cloud-Compute%20Engine-4285F4">
+</p>
+
 **A simulated health insurer run entirely by AI agents, selling to a town of AI customers.**
 
 50 AI employees across 12 departments run the company. 100 AI residents in a 3D town decide whether to buy from it. Nothing in the company's numbers is scripted: every sale, claim and cancellation comes from a decision a resident agent made.
@@ -8,12 +22,12 @@
 
 ## Videos
 
-| Video | Length | What it shows |
-|---|---|---|
-| [▶ 90-second overview](videos/ai-company-health-90s.mp4) | 1:35 | The idea, a live chat with an agent, the results and the tracing |
-| [▶ Full walkthrough](videos/ai-company-health-walkthrough.mp4) | 4:04 | The town, the office, a live meeting, dashboards, documents, traces and evaluations |
+| 90-second overview | Full walkthrough (4 min) |
+|---|---|
+| [![90-second overview](videos/cover.png)](videos/ai-company-health-90s.mp4) | [![Full walkthrough](videos/cover.png)](videos/ai-company-health-walkthrough.mp4) |
+| [▶ `ai-company-health-90s.mp4`](videos/ai-company-health-90s.mp4): the idea, a live chat with an agent, results and tracing | [▶ `ai-company-health-walkthrough.mp4`](videos/ai-company-health-walkthrough.mp4): the town, the office, a live meeting, dashboards, documents, traces and evaluations |
 
-Both are screen recordings of the running app with narration and captions, so they also work with the sound off. Click a title to open the video.
+Both videos are screen recordings of the running app with narration and burned-in captions, so they also work with the sound off. Click a thumbnail to open the video.
 
 ## What I'm seeing (35 simulated days)
 
@@ -143,7 +157,7 @@ cd backend && uv run pytest
 ## Project layout
 
 ```
-videos/             the 90-second overview and the full walkthrough
+videos/             the 90-second overview, the full walkthrough and the cover image
 backend/            Python backend: agents, A2A, workflows, company, town, quality, API (details in backend/README.md)
 frontend/           the 3D UI (Three.js), served by the backend
 docs/HQ-API.md      the UI ↔ backend event protocol
