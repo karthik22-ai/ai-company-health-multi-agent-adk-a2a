@@ -22,12 +22,17 @@
 
 ## Videos
 
-| 90-second overview | Full walkthrough (4 min) |
-|---|---|
-| [![90-second overview](videos/cover.png)](videos/ai-company-health-90s.mp4) | [![Full walkthrough](videos/cover.png)](videos/ai-company-health-walkthrough.mp4) |
-| [▶ `ai-company-health-90s.mp4`](videos/ai-company-health-90s.mp4): the idea, a live chat with an agent, results and tracing | [▶ `ai-company-health-walkthrough.mp4`](videos/ai-company-health-walkthrough.mp4): the town, the office, a live meeting, dashboards, documents, traces and evaluations |
+### ▶ 90-second overview
+The idea, a live chat with an agent, the results and the tracing.
 
-Both videos are screen recordings of the running app with narration and burned-in captions, so they also work with the sound off. Click a thumbnail to open the video.
+https://github.com/user-attachments/assets/72480d8e-e928-4b10-94df-baf271187804
+
+### ▶ Full walkthrough (4 min)
+The town, the office, a live meeting, dashboards, documents, traces and evaluations.
+
+https://github.com/user-attachments/assets/34276b96-7df1-4f7d-9d13-9844364c0ad8
+
+Both are screen recordings of the running app with narration and burned-in captions, so they also work with the sound off. Full-quality files: [`videos/ai-company-health-90s.mp4`](videos/ai-company-health-90s.mp4) · [`videos/ai-company-health-walkthrough.mp4`](videos/ai-company-health-walkthrough.mp4).
 
 ## What I'm seeing (35 simulated days)
 
